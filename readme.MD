@@ -15,6 +15,7 @@ This game key can be anything - just make sure both parties are using the same k
     "key": "{my_arbitrary_game_key}",
     "token": null,
     "player": "{your_player_id [string]}",
+    "playerNumber": "{your_player_number_as_on_the_board[1 or 0]}",
     "board": [
         [0,0,0, ....]
         ....
@@ -42,6 +43,7 @@ Also note, if the game is complete, this endpoint may return either "winner" or 
     "key": "{my_arbitrary_game_key}",
     "token": "{my_one_time_move_token}",
     "player": "{your_player_id [string]}",
+    "playerNumber": "{your_player_number_as_on_the_board[1 or 0]}",
     "board": [
         [0,0,0, ....]
         ....

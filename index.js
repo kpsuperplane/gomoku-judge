@@ -52,7 +52,7 @@ function serializeBoard(key, player){
         return {status: hasWon?"winner":"loser"};
     }
 
-    return {status: "success", key: key, token: board.token, player: player, board: board.board};
+    return {status: "success", key: key, token: board.token, player: player, playerNumber: board.playerIds[player], board: board.board};
 }
 
 /* Continuously waits until it's `player`'s turn */
