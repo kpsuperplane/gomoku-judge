@@ -46,7 +46,7 @@ function getBoard(key){
 function serializeBoard(key, player){
     var board = getBoard(key);
 
-    if(winner != null){ //check if the dude won
+    if(board.winner != null){ //check if the dude won
         var hasWon = board.playerIds[player] == board.winner;
         deleteGame(key);
         return {status: hasWon?"winner":"loser"};
