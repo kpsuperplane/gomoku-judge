@@ -138,7 +138,8 @@ app.get('/await', function(req, res){
 app.get('/move', function(req, res){
     var board = getBoard(req.query.key);
 
-    const {x, y} = req.query;
+    const x = req.query.x;
+    const y= req.query.y;
 
     /* Check if valid move */
     if(!(req.query.player in board.playerIds) || board.currentPlayer != board.playerIds[req.query.player] || board.token != req.query.token){ res.send({"status": "error", "message": "Invalid player."}); return;}
